@@ -124,6 +124,11 @@ plt.show()
 # ==============================
 # 8. Save the Model
 # ==============================
-model_path = os.path.join(BASE_DIR, 'churn_ann_model.keras')
-ann.save(model_path)
-print(f"\n✅ Model saved at: {model_path}")
+save = input("\nDo you want to save the trained model? (y/n): ").strip().lower()
+if save == 'y':
+    model_path = os.path.join(BASE_DIR, 'churn_ann_model.keras')
+    ann.save(model_path)
+    print(f"\n✅ Model saved at: {model_path}")
+else:
+    print("\n❌ Model not saved.")
+    print("end of program.")
