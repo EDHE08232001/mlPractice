@@ -109,7 +109,7 @@ print("[INFO] Training complete.")
 # ==========================================================
 # 5. Single Image Prediction
 # ==========================================================
-image_path = os.path.join(dataset_path, '..', 'single_prediction', 'cat_or_dog_1.jpg')
+image_path = os.path.join(dataset_path, 'single_prediction', 'cat_or_dog_1.jpg')
 image_path = os.path.abspath(image_path)
 
 if not os.path.exists(image_path):
